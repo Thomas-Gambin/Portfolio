@@ -1,0 +1,6 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    /*background: linear-gradient(to right, #1e0357, #51024d)*/
+}
