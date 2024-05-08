@@ -2,5 +2,48 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: lightblue;
-    /*background: linear-gradient(to right, #1e0357, #51024d)*/
+    /* background: linear-gradient(to right, #1e0b47, #30012e); */
+}
+
+h1 {
+    font-size: 80px;
+}
+
+#image__h1 img {
+    width: 80px;
+    height: auto;
+    vertical-align: -13px;
+}
+
+.perso {
+    position: relative;
+    margin: 200 600;
+    transition: all 0.3s ease;
+}
+
+.perso:hover {
+    border: 3px groove blue;
+    border-radius: 10px;
+    transform: scale(1.025);
+}
+
+.image__presentation-container {
+    position: relative;
+}
+
+#image__presentation1,
+#image__presentation2 {
+    position: relative;
+}
+
+#image__presentation1 img {
+    width: 250px;
+    border-radius: 100%;
+    filter: blur(5px);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#image__presentation2 img {
+    width: 245px;
+    border-radius: 100%;
 }
