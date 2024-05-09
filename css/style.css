@@ -1,3 +1,17 @@
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,45 +19,86 @@ body {
     /* background: linear-gradient(to right, #1e0b47, #30012e); */
 }
 
+/** Section header  */
+
 h1 {
-    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    margin-top: 50px;
+    transition: all 0.8s ease;
+}
+
+h1:hover {
+    /* transform: scale(1.3); */
+    animation: bounce 1.3s ease;
 }
 
 #image__h1 img {
-    width: 80px;
+    width: 110px;
     height: auto;
-    vertical-align: -13px;
+    vertical-align: middle;
+}
+
+/** Section présentation */
+
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px;
+    align-items: normal;
+    justify-content: space-between;
+    margin: 150 250 100 200;
 }
 
 .perso {
     position: relative;
-    margin: 200 600;
     transition: all 0.3s ease;
+    border: 5px solid rgb(60, 2, 74);
+    border-radius: 10px;
+    box-shadow: 2px 4px 40px rgba(0, 0, 0, 1);
+    margin-right: 100px;
+
 }
 
 .perso:hover {
-    border: 3px groove blue;
-    border-radius: 10px;
     transform: scale(1.025);
+    box-shadow:
+        0 0 15px 7.5px rgb(60, 2, 74),
+        0 0 35px 5px rgb(137, 15, 137),
+        0 0 300px 20px rgb(169, 66, 217);
 }
 
-.image__presentation-container {
+.formation {
     position: relative;
+    transition: all 0.3s ease;
+    border: 5px solid rgb(60, 2, 74);
+    border-radius: 10px;
+    box-shadow: 2px 4px 40px rgba(0, 0, 0, 1);
+    margin-left: 100px;
+
 }
 
-#image__presentation1,
-#image__presentation2 {
-    position: relative;
+.formation:hover {
+    transform: scale(1.025);
+    box-shadow:
+        0 0 15px 7.5px rgb(60, 2, 74),
+        0 0 35px 5px rgb(137, 15, 137),
+        0 0 300px 20px rgb(169, 66, 217);
 }
 
-#image__presentation1 img {
-    width: 250px;
-    border-radius: 100%;
-    filter: blur(5px);
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+article {
+    padding: 50 50 50 50;
 }
 
-#image__presentation2 img {
-    width: 245px;
-    border-radius: 100%;
+/** Section parcours */
+
+.parcours {
+    margin-top: 150;
+    margin-bottom: 150;
+}
+
+p#status {
+    display: flex;
+    justify-content: center;
 }
