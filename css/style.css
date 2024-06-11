@@ -1,64 +1,179 @@
-@keyframes bounce {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: lightblue;
+    flex-wrap: wrap;
     /* background: linear-gradient(to right, #1e0b47, #30012e); */
 }
 
 /** Section header  */
+header {
+    height: 75vh;
+    background-image: url("../Images/code3.png");
+    background-size: cover;
+    background-position: center;
+
+}
 
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 120px;
-    margin-top: 50px;
-    transition: all 0.8s ease;
+    font-size: 9rem;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
 }
 
-h1:hover {
-    /* transform: scale(1.3); */
-    animation: bounce 1.3s ease;
+@media (max-width: 1024px) {
+    header {
+        height: 60vh;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+        padding-top: 15rem;
+        padding-bottom: 20rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding-top: 12rem;
+        padding-bottom: 15rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 15vw;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        justify-content: center;
+    }
+
+    #image__h1 img {
+        height: 0.9rem;
+        width: auto;
+        vertical-align: middle;
+    }
 }
 
 #image__h1 img {
-    width: 110px;
-    height: auto;
+    height: 0.9em;
+    width: auto;
     vertical-align: middle;
 }
+
+/** Section détail */
+
+.detail {
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 14vh 5vw;
+}
+
+.detail ul {
+    margin-top: 1.25em;
+    /* flex-basis: 50%; */
+    /* Occupe 50% de la largeur du parent */
+}
+
+.detail li {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-top: 5px;
+}
+
+.detail span {
+    font-weight: bold;
+}
+
+.detail img {
+    height: 12em;
+    width: auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .detail {
+        font-size: 1.8vh;
+        margin: 10vh 5vw;
+
+    }
+
+    /* .detail img {
+        height: 128px;
+        border-radius: 50%;
+        margin-top: 30;
+        width: auto;
+
+    } */
+}
+
+
+@media (max-width: 768px) {
+    .detail {
+        font-size: 1.8vh;
+        margin: 4vh 5vw;
+
+    }
+
+    /* .detail img {
+        height: 9em;
+        width: auto;
+        border-radius: 50%;
+        margin-top: 35;
+    } */
+}
+
+@media (max-width: 480px) {
+    .detail {
+        font-size: 1.8vh;
+        margin: 0vh 5vw;
+
+    }
+
+    /* .detail img {
+        height: 12em;
+        width: auto;
+        border-radius: 50%;
+        margin-top: 15;
+    } */
+}
+
+
 
 /** Section présentation */
 
 .presentation {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 10px;
-    align-items: normal;
-    justify-content: space-between;
-    margin: 150 250 100 200;
+    display: flex;
+    flex-wrap: flex;
+    font-size: 2vh;
+    justify-content: center;
+    margin: 15.9vh 10vh 10.6vh 10vh;
 }
 
 .perso {
-    position: relative;
-    transition: all 0.3s ease;
-    border: 5px solid rgb(60, 2, 74);
-    border-radius: 10px;
+    border: 5px solid #200A45;
+    border-radius: 60px;
     box-shadow: 2px 4px 40px rgba(0, 0, 0, 1);
-    margin-right: 100px;
-
+    margin: 1vw;
+    padding: 2.59vw;
+    transition: all 0.3s ease;
 }
 
 .perso:hover {
@@ -69,26 +184,32 @@ h1:hover {
         0 0 300px 20px rgb(169, 66, 217);
 }
 
-.formation {
-    position: relative;
-    transition: all 0.3s ease;
-    border: 5px solid rgb(60, 2, 74);
-    border-radius: 10px;
-    box-shadow: 2px 4px 40px rgba(0, 0, 0, 1);
-    margin-left: 100px;
-
-}
-
-.formation:hover {
-    transform: scale(1.025);
-    box-shadow:
-        0 0 15px 7.5px rgb(60, 2, 74),
-        0 0 35px 5px rgb(137, 15, 137),
-        0 0 300px 20px rgb(169, 66, 217);
-}
 
 article {
-    padding: 50 50 50 50;
+    padding: 3vh 8vh 3vh 8vh;
+}
+
+@media (max-width: 1024px) {
+    .presentation {
+        margin: 15.9vh 5vh 10.6vh 5vh;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .presentation {
+        margin: 15.9vh 1vh 10.6vh 1vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .presentation {
+        margin: 10vh 1vh 10.6vh 1vh;
+    }
+
+    article {
+        padding: 2vh 2vh 2vh 2vh;
+    }
 }
 
 /** Section parcours */
