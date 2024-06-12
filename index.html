@@ -10,8 +10,20 @@
 </head>
 
 <body>
-    <nav></nav>
-    <header>
+    <header id="accueil">
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#status-actuel">Status</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#projet">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <img src="Images/humberger.png" alt="menu-deroulant" class="menu-hamburger">
+        </nav>
         <h1>Hello W<span id="image__h1"><img src="Images/Earth.gif" alt="earth"></span>rld !</h1>
     </header>
     <main>
@@ -34,51 +46,94 @@
                 <img src="Images/Moi.jpg" alt="Thomas Gambin">
             </div>
         </section>
-        <section class="presentation">
-            <div class="perso" id="perso">
+        <section class="presentation" id="presentation">
+            <div class="perso">
+                <h2>Présentation</h2>
                 <article>
-                    Bonjour !<br><br>Je suis Thomas Gambin, passionné d'infomatique et résidant dans le Var à proximité
-                    de
-                    Draguignan. Attiré par les nouvelles technogies depuis toujours, je me suis plongé dans le monde du
-                    développement web pour en faire mon travail.<br><br>Je vous invite donc à découvrir mon parcours,
+                    Bonjour !<br><br>
+                    Je suis Thomas Gambin, passionné d'infomatique et résidant dans le Var à proximité
+                    de Draguignan. Attiré par les nouvelles technogies depuis toujours, je me suis plongé dans le monde
+                    du
+                    développement web pour en faire mon travail.
+                    <br><br>Je vous invite donc à découvrir mon parcours,
                     mes
-                    compétences et mes réalisations à travers projets.<br><br>Bienvenue dans mon univers numérique
-                    !<br><br>
+                    compétences et mes réalisations à travers projets.
+                    <br><br>Bienvenue dans mon univers numérique !<br><br>
 
                     Actuellement en formation depuis le mois de Fevrier 2024 au sein de l'école O'Clock dans la
-                    quelle j'ai appris les bases des langages de développement web front et back-end,et que
-                    j'approffondis au cours de cette formation, notament le langage PHP dont le framework symfony dans
-                    les prochains mois.
+                    quelle j'ai appris les bases des langages de développement web front et back-end, et que
+                    j'approffondis au cours de cette formation, notament le langage PHP dont le framework symfony.
                 </article>
             </div>
         </section>
-        <section class="parcours">
-            <p id="status">
-                Je suis à la recherche d'une alternance en entreprise afin d'approfondir mes compétences et
-                mon savoir faire dans ce domaine tout en suivant une formation de concepteur développeur d'applications
-                web.
-            </p>
-            <div class="travail">
-                <h2>Mes experiences professionnels</h2>
-
+        <section class="status-actuel" id="status-actuel">
+            <div class="status">
+                <h2 id="status">Actuellement</h2>
+                <article>
+                    Je suis à la recherche d'une alternance en entreprise afin d'approfondir mes compétences et
+                    mon savoir faire dans ce domaine tout en suivant une formation de concepteur développeur
+                    d'applications
+                    web.
+                </article>
             </div>
         </section>
-        <section class="projet">
-            <h2>Mes projets perso</h2>
 
-            Consulter les résultats du cross <a href="resultats-cross-2023.pdf" alt="Résultats du cross 2023">ici</a>
+        <section class="parcours" id="parcours">
+
+            <div class="travail">
+                <h2>Mes experiences professionnelles</h2>
+                <div class="container">
+                    <ul class="image-list">
+                        <img class="image-item" src="Images/PréparationCommande.png" alt="PréparationCommande" />
+                        <img class="image-item" src="Images/TechnicienTelecom.png" alt="TechnicienTelecom" />
+                        <img class="image-item" src="Images/DevWeb.png" alt="DevWeb" />
+                    </ul>
+                </div>
+        </section>
+        <section class="projet" id="projet">
+            <h2>Mes projets perso</h2>
+            <div class="slide-container">
+                <div class="custom-slider slide-in">
+                    <div class="slide-index">1 / 3</div>
+                    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide1.jpg">
+                    <div class="slide-text">Mon portefolio</div>
+                </div>
+                <div class="custom-slider slide-in">
+                    <div class="slide-index">2 / 3</div>
+                    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide2.jpg">
+                    <div class="slide-text">Projet en cours ! 🚧</div>
+                </div>
+                <div class="custom-slider slide-in">
+                    <div class="slide-index">3 / 3</div>
+                    <img class="slide-img" src="https://www.codeur.com/tuto/wp-content/uploads/2021/12/slide3.jpg">
+                    <div class="slide-text">Projet en cours ! 🚧</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div class="slide-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="me-contacter">
-            <nav>
+        <div class="me-contacter" id="contact">
+            <h2>Me contacter</h2>
+            <nav class="Liens">
                 <a href="https://fr.linkedin.com/in/thomas-gambin-99b20b199?trk=people-guest_people_search-card"
-                    target="_blank"><img src="Images/LinkedIn-logo.png" alt="logo-linkedin">Mon linkedin</a>
+                    target="_blank"><img src="Images/Linkedin-logo.png" alt="Mon linkedin"></a>
                 <a href="https://github.com/Thomas-Gambin" target="_blank"><img src="Images/github.png"
-                        alt="logo-github">Mon github</a>
+                        alt="Mon github"></a>
+                <a href="mailto:t.gambin.pro@gmail.com" target="_blank"><img src="Images/Mail.png" alt="Mon mail"></a>
             </nav>
+            <article id="Droits">
+                Thomas Gambin 2024
+            </article>
         </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
