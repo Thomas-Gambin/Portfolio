@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    background-color: rgb(34, 25, 39);
+    background-color: rgb(23, 26, 35);
     color: #c0c0c0;
 
 }
@@ -28,7 +28,7 @@ h2 {
 
 .nav-links {
     align-content: center;
-    background-color: rgba(119, 119, 119, 0.267);
+    background-color: rgba(0, 0, 0, 0.391);
     backdrop-filter: blur(3px);
     border-radius: 30px;
     height: 90px;
@@ -39,6 +39,7 @@ h2 {
     text-decoration: none;
     outline: none;
     transition: all 0.2s ease;
+    font-size: 22px;
 }
 
 .navbar .nav-links ul {
@@ -85,7 +86,7 @@ h2 {
     .nav-links {
         top: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.20);
+        background-color: rgba(14, 14, 14, 0.318);
         backdrop-filter: blur(3px);
         width: 100%;
         height: 100vh;
@@ -135,7 +136,7 @@ h2 {
 
 /** Section header  */
 header {
-    height: 90vh;
+    height: 70vh;
     background-image: url("../Images/code.png");
     background-size: cover;
     background-position: center;
@@ -147,8 +148,8 @@ h1 {
     font-weight: 600;
     display: flex;
     justify-content: center;
-    font-size: 7rem;
-    padding-top: 30vh;
+    font-size: 6rem;
+    padding-top: 20vh;
     padding-bottom: 5vh;
 }
 
@@ -165,11 +166,11 @@ h1 {
 
 .titre a {
     color: #c0c0c0;
-    font-size: 3.5rem;
+    font-size: 2.6rem;
     line-height: 60px;
     text-decoration: none;
     outline: none;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
     display: inline-block;
 }
 
@@ -192,6 +193,7 @@ h1 {
         padding-top: 10rem;
         padding-bottom: 2rem;
         justify-content: center;
+        transition: 1s;
     }
 
     .titre a {
@@ -254,7 +256,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin: 10vh 5vw;
+    margin: 5vh 5vw;
     text-align: center;
 }
 
@@ -302,7 +304,10 @@ h1 {
 @media (max-width: 480px) {
     .detail {
         margin: 5vh 5vw;
+    }
 
+    .detail img {
+        margin: 0;
     }
 }
 
@@ -319,10 +324,10 @@ h1 {
 
 .perso {
     color: #c0c0c0;
-    background: linear-gradient(to right, #292138, #3b213a);
-    border: 5px solid linear-gradient(to right, #292138, #3b213a);
+    background: linear-gradient(to right, #212138, #303d55);
+    border: 5px solid linear-gradient(to right, #212138, #303d55);
     border-radius: 60px;
-    box-shadow: 2px 4px 40px linear-gradient(to right, #292138, #3b213a);
+    box-shadow: 2px 4px 40px linear-gradient(to right, #212138, #303d55);
     margin: 1vw;
     padding: 2.59vw;
     transition: all 1s ease;
@@ -331,16 +336,16 @@ h1 {
 .perso:hover {
     transform: scale(1.025);
     box-shadow:
-        0 0 40px 7.5px #292138,
-        0 0 40px 15px rgb(62, 24, 80),
-        0 0 300px 20px rgb(114, 66, 137);
+        0 0 40px 7.5px #212b38,
+        0 0 40px 15px rgb(24, 43, 80),
+        0 0 300px 20px rgb(66, 93, 137);
 }
 
 
 article {
     font-size: 2vh;
     line-height: 30px;
-    padding: 3vh 8vh 3vh 8vh;
+    padding: 0vh 8vh 3vh 8vh;
     text-align: center;
 }
 
@@ -414,10 +419,10 @@ article {
 }
 
 .travail {
-    background: linear-gradient(to right, #292138, #3b213a);
-    border: 5px solid linear-gradient(to right, #292138, #3b213a);
+    background: linear-gradient(to right, #212138, #303d55);
+    border: 5px solid linear-gradient(to right, #212138, #303d55);
     border-radius: 60px;
-    box-shadow: 2px 4px 40px linear-gradient(to right, #292138, #3b213a);
+    box-shadow: 2px 4px 40px linear-gradient(to right, #212138, #303d55);
     text-align: center;
     padding-top: 45px;
     padding-bottom: 30px;
@@ -427,9 +432,9 @@ article {
 .travail:hover {
     transform: scale(1.025);
     box-shadow:
-        0 0 40px 7.5px #292138,
-        0 0 40px 15px rgb(62, 24, 80),
-        0 0 300px 20px rgb(114, 66, 137);
+        0 0 40px 7.5px #212b38,
+        0 0 40px 15px rgb(24, 43, 80),
+        0 0 300px 20px rgb(66, 93, 137);
 }
 
 .container {
@@ -617,6 +622,7 @@ article {
 }
 
 .contact {
+    padding-top: 40px;
     justify-content: center;
     text-align: center;
     margin-bottom: 0px;
@@ -635,6 +641,7 @@ article {
 }
 
 .Liens {
+    padding-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -644,7 +651,8 @@ article {
 .Liens a img {
     height: auto;
     width: 60px;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
     transition: all 0.5s ease;
 }
 
