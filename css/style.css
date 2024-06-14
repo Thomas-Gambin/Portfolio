@@ -100,6 +100,7 @@ h2 {
     .nav-links.mobile-menu {
         margin-top: 0;
         position: fixed;
+        z-index: 1;
 
     }
 
@@ -283,7 +284,7 @@ h1 {
     height: 12em;
     width: auto;
     border-radius: 50%;
-    box-shadow: 0px 0px 50px rgb(41, 28, 53);
+    box-shadow: 0px 0px 50px #212b38;
 }
 
 @media (max-width: 1024px) {
@@ -498,6 +499,7 @@ article {
 /** Section projets perso */
 
 .projet {
+    z-index: 0;
     margin: 10vh 10vh 10vh 10vh;
     text-align: center;
 }
@@ -641,6 +643,7 @@ article {
 }
 
 .Liens {
+    margin-top: 30px;
     padding-top: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -651,7 +654,6 @@ article {
 .Liens a img {
     height: auto;
     width: 60px;
-    padding-top: 20px;
     margin-bottom: 30px;
     transition: all 0.5s ease;
 }
@@ -668,5 +670,13 @@ article {
 @media (max-width: 780px) {
     .me-contacter {
         margin: 15.9vh 1vh 5vh 1vh;
+    }
+
+    .Liens a img {
+        margin-bottom: 0px;
+    }
+
+    .Liens {
+        line-height: 1px;
     }
 }
