@@ -28,8 +28,9 @@ h2 {
 
 .nav-links {
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.391);
-    backdrop-filter: blur(3px);
+    background-color: rgba(14, 14, 14, 0.591);
+    backdrop-filter: blur(3px) contrast(90%);
+    -webkit-backdrop-filter: blur(3px) contrast(90%);
     border-radius: 30px;
     height: 90px;
 }
@@ -87,7 +88,6 @@ h2 {
         top: 0;
         left: 0;
         background-color: rgba(14, 14, 14, 0.591);
-        backdrop-filter: blur(5px);
         width: 100%;
         height: 100vh;
         display: flex;
